@@ -25,7 +25,7 @@ Open a command line and type wad2udmf -h to get started
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+left intentionally blank
 
 ## Acknowledgments
 
