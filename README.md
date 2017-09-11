@@ -13,7 +13,7 @@ Visual Studio Community 2015 if compiling otherwise none
 
 ### Usage
 
-Open a command line and type wad2udmf -h to get started
+Open a command line, type "wad2udmf -h" and press enter to get started
 
 ## Built With
 
