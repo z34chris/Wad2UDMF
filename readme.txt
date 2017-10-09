@@ -5,12 +5,13 @@ z34chris@yahoo.com
 type 'wad2udmf -h' for help
 
 Usage: wad2udmf [switch] [value]...
-================================================
+=======================================================
 Switches: -h        displays this help dialogue
           -input    (-i) binary wadfile to convert
           -output   (-o) converted udmf output file
+	-hexen    convert maps to hexen format
           -maps     specified maps to convert
-          (previous feature will be added later)
+          (previous two features will be added later)
 
 
 This is a utility for Doom and Doom2 (possibly others)
@@ -19,9 +20,28 @@ UDMF format and then creates a wadfile from that.
 
 Please note that UDMF is many times larger than the binary
 format.  Converting an entire IWAD will create a UDMF wadfile
-of equal size minus the graphics.
+of equal similar minus the graphics.
+
+
+***Please Note***
+Upcoming utility to create doom levels in the works!
+
 
 current status:
+Version 0.3.7.6 beta October 8, 2017
+*fixed problem where lump entries would not write to the file
+*fixed problem on unconverted maps where DM things would appear in single play
+*fixed problem with sector secret flag
+
+*tested on Dark7.wad
+*tested on tab8.wad
+*tested on void.wad, minor glitches with playerfall script
+*tested on demo.wad, door sparks do not work
+*tested on unconverted doom2.wad with no mechanical problems
+*tested on HR.wad with no mechanical problems
+*has problem with map entries where sectors will not write due to
+ maps missing ssegs nodes and ssectors entries
+
 Version 0.3.7.5 beta September 17, 2017
 *Visual Studio 2015 Community Build
 *extraneous vertices should be fixed
