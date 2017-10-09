@@ -41,6 +41,8 @@ Version 0.3.7.6 beta October 8, 2017
 *tested on HR.wad with no mechanical problems
 *has problem with map entries where sectors will not write due to
  maps missing ssegs nodes and ssectors entries
+ 
+Tested on Windows 10 Operating system
 
 Version 0.3.7.5 beta September 17, 2017
 *Visual Studio 2015 Community Build
