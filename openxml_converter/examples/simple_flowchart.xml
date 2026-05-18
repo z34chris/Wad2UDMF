@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Simple flowchart example in OpenXML DrawingML format -->
+<!-- This represents a basic program flow: Start -> Process -> Decision -> End -->
+<p:sld xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
+       xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main"
+       xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <p:cSld>
+    <p:bg>
+      <p:bgPr>
+        <a:solidFill><a:srgbClr val="FFFFFF"/></a:solidFill>
+        <a:effectLst/>
+      </p:bgPr>
+    </p:bg>
+    <p:spTree>
+      <p:nvGrpSpPr>
+        <p:cNvPr id="1" name="Slide 1"/>
+        <p:cNvGrpSpPr/>
+        <p:nvPr/>
+      </p:nvGrpSpPr>
+      <p:grpSpPr>
+        <a:xfrm>
+          <a:off x="0" y="0"/>
+          <a:ext cx="9144000" cy="6858000"/>
+          <a:chOff x="0" y="0"/>
+          <a:chExt cx="9144000" cy="6858000"/>
+        </a:xfrm>
+      </p:grpSpPr>
+      
+      <!-- Shape 1: Terminator (Start) -->
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="2" name="Start"/>
+          <p:cNvSpPr/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="3960000" y="400000"/>
+            <a:ext cx="1200000" cy="600000"/>
+          </a:xfrm>
+          <a:prstGeom prst="flowChartTerminator">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:solidFill><a:srgbClr val="00B050"/></a:solidFill>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr/>
+          <a:lstStyle/>
+          <a:p>
+            <a:t>START</a:t>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      
+      <!-- Shape 2: Process -->
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="3" name="Process1"/>
+          <p:cNvSpPr/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="3960000" y="1200000"/>
+            <a:ext cx="1200000" cy="600000"/>
+          </a:xfrm>
+          <a:prstGeom prst="flowChartProcess">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:solidFill><a:srgbClr val="0070C0"/></a:solidFill>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr/>
+          <a:lstStyle/>
+          <a:p>
+            <a:t>Initialize Variables</a:t>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      
+      <!-- Shape 3: Process -->
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="4" name="Process2"/>
+          <p:cNvSpPr/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="3960000" y="2000000"/>
+            <a:ext cx="1200000" cy="600000"/>
+          </a:xfrm>
+          <a:prstGeom prst="flowChartProcess">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:solidFill><a:srgbClr val="0070C0"/></a:solidFill>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr/>
+          <a:lstStyle/>
+          <a:p>
+            <a:t>Process Data</a:t>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      
+      <!-- Shape 4: Decision -->
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="5" name="Decision1"/>
+          <p:cNvSpPr/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="3960000" y="2900000"/>
+            <a:ext cx="1200000" cy="800000"/>
+          </a:xfrm>
+          <a:prstGeom prst="flowChartDecision">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:solidFill><a:srgbClr val="FFC000"/></a:solidFill>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr/>
+          <a:lstStyle/>
+          <a:p>
+            <a:t>Is Valid?</a:t>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      
+      <!-- Shape 5: Process (Yes Path) -->
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="6" name="ProcessYes"/>
+          <p:cNvSpPr/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="2200000" y="4000000"/>
+            <a:ext cx="1200000" cy="600000"/>
+          </a:xfrm>
+          <a:prstGeom prst="flowChartProcess">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:solidFill><a:srgbClr val="0070C0"/></a:solidFill>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr/>
+          <a:lstStyle/>
+          <a:p>
+            <a:t>Output Result</a:t>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      
+      <!-- Shape 6: Process (No Path) -->
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="7" name="ProcessNo"/>
+          <p:cNvSpPr/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="5700000" y="4000000"/>
+            <a:ext cx="1200000" cy="600000"/>
+          </a:xfrm>
+          <a:prstGeom prst="flowChartProcess">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:solidFill><a:srgbClr val="0070C0"/></a:solidFill>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr/>
+          <a:lstStyle/>
+          <a:p>
+            <a:t>Handle Error</a:t>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      
+      <!-- Shape 7: Terminator (End) -->
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="8" name="End"/>
+          <p:cNvSpPr/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="3960000" y="5200000"/>
+            <a:ext cx="1200000" cy="600000"/>
+          </a:xfrm>
+          <a:prstGeom prst="flowChartTerminator">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:solidFill><a:srgbClr val="C00000"/></a:solidFill>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr/>
+          <a:lstStyle/>
+          <a:p>
+            <a:t>END</a:t>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      
+      <!-- Connector lines (simplified representation) -->
+      <!-- In a real OOXML file, these would be cxnSp elements -->
+    </p:spTree>
+  </p:cSld>
+  <p:clrMapOvr>
+    <a:masterClrMapping/>
+  </p:clrMapOvr>
+</p:sld>
